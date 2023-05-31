@@ -25,7 +25,7 @@
                     <li><a href="/signin/signout.php">Sign Out</a></li>
                 <?php } ?>
                 <?php if(!$userid) { ?>
-                <li><a href="javascript:void(0)">My Starbucks</a></li> 
+                <li><a href="/signin/signin_form.php">My Starbucks</a></li> 
                 <?php } else { ?>
                   <li><a href="/member/member_modify_form.php">My Starbucks</a></li> 
                 <?php } ?>
