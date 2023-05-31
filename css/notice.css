@@ -1,0 +1,46 @@
+table {
+    border-top: 0.5px solid #444444;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 0.5px solid #444444;
+    padding: 7px;
+}
+
+td {
+    border-bottom: 0.5px solid #efefef;
+    padding: 7px;
+}
+
+table .even {
+    background: #efefef;
+}
+
+.text {
+    text-align: center;
+    padding-top: 7px;
+    color: #000000
+}
+
+.text:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    color: #57A0EE;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.read_btn1 {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}

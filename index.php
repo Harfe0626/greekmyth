@@ -1,357 +1,99 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리스신화박물관</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 
-  <title>Starbucks Coffee Korea</title>
-
-  <!--Open Graph-->
-  <!--http://ogp.me/-->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Starbucks" />
-  <meta property="og:title" content="Starbucks Coffee Korea" />
-  <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="og:image" content="./images/starbucks_seo.jpg" />
-  <meta property="og:url" content="https://starbucks.co.kr" />
-
-  <!--Twitter Card-->
-  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:site" content="Starbucks" />
-  <meta property="twitter:title" content="Starbucks Coffee Korea" />
-  <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
-  <meta property="twitter:url" content="https://starbucks.co.kr" />
-
-  <!--파비콘-->
-  <!--<link rel="shortcut icon" href="favicon.ico" />-->
-  <link rel="icon" href="./favicon.png" />
-  <!--브라우저 스타일 초기화-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-  <!--Google Fonts - 나눔고딕-->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
-  <!--Google Material Icons-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="./css/common.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-
-  <!--GSAP & ScrollToPlugin-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
-  <!--Swiper-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
-  <!--ScrollMagic-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-  <!--Lodash-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-
-  <script defer src="./js/youtube.js"></script>
-  <script defer src="./js/common.js"></script>
-  <script defer src="./js/main.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function()
-    {
-      $("header").load("../header.php");
-      $("footer").load("../footer.php");
-    });
-    </script>
 </head>
 <body>
-  <!--HEADER-->
-  <header>
-  <?php include 'header.php' ?>
- </header>
-
-  <!--VISUAL-->
-  <section class="visual">
-    <div class="inner">
-
-      <div class="title fade-in">
-        <img src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEARS" />
-        <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a>
-      </div>
-      <div class="fade-in">
-        <img src="./images/visual_cup1.png" alt="new OATMEAL LATTE" class="cup1 image" />
-        <img src="./images/visual_cup1_text.png" alt="오트밀 라떼" class="cup1 text" />
-      </div>
-      <div class="fade-in">
-        <img src="./images/visual_cup2.png" alt="new STARBUCKS CARAMEL CRUMBLE MOCHA" class="cup2 image" />
-        <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 모카" class="cup2 text" />
-      </div>
-      <div class="fade-in">
-        <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
-      </div>
-
-    </div>
-  </section>
-
-
-  <!--NOTICE-->
-  <section class="notice">
-
-    <!--NOTICE LINE-->
-    <div class="notice-line">
-      <div class="bg-left"></div>
-      <div class="bg-right"></div>
-      <div class="inner">
-
-        <div class="inner__left">
-          <h2>공지사항</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="javascript:void(0)">크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:void(0)">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
-              </div>
+    <div id="wrap">
+        <header>
+          <?php include "./header.php"       ?>
+        </header>
+        <section id="image_slider">
+            <div id="slider">
+                <figure>
+                <img src="./img/main/top_main01.jpg" alt>
+                <img src="./img/main/top_main02.jpg" alt>
+                <img src="./img/main/top_main03.jpg" alt>
+                <img src="./img/main/top_main04.jpg" alt>
+                <img src="./img/main/top_main05.jpg" alt>
+                </figure>
             </div>
-          </div>
-          <a href="javascript:void(0)" class="notice-line__more">
-            <span class="material-icons">add_circle</span>
-          </a>
-        </div>
+           
+           <article id="slider_text">
+               <ul>
+                   <li>Greek Mythology is alive</li>
+                   <li>그리스 신화가 살아숨쉬는 곳</li>
+               </ul>
+               <div>GREEKMYTHOLOGYISMUSIAM</div>
+           </article>
+           <article id="info">
+               <ul>
+                   <li> <img src="./img/main/tail1.gif" alt=""></li>
+                   <li> <a href="#main_contents"><img src="./img/main/btn.gif" alt=""></a></li> 
+                   <li> <img src="./img/main/tail2.gif" alt=""></li>
+               </ul>
+           </article>
+        </section>
+        <section id="main_contents">
+            <article id="top_art">
+                <ul>
+                    <li><img src="./img/main/blog_con_img.jpg" alt=""></li>
+                    <li><img src="./img/main/content_title.gif" alt="">
+                        <a href=""><img src="./img/main/Thumbnail.jpg" alt=""></a></li>
+                    <li><img src="./img/main/gallery_con_img.jpg" alt=""></li>
+                </ul>
+            </article>
+            <article id="middle_art">
+                <h4>Notice</h4>
+                <ul id="notice_contents"> 
+                    <li><a href="">그리스신화박물관 포스트 시작합…</a>  </li>
+                    <li><a href="">2018년 새해 복 많이 받으세요~</a> </li>
+                    <li><a href="">2017년도 문화가 있는날은 계속됩…</a> </li>
+                    <li><a href="">2017년 정유년 새해 복 많이 받읍…</a> </li>
+                </ul>
+                <ul id="notice_arrow">
+                    <li><img src="./img/main/notice_up.gif" alt=""></li>
+                    <li><img src="./img/main/notice_down.gif" alt=""></li>
+                </ul>
+            </article>
+            <article id="bottom_art">
+                <ul>
+                    <li>
+                        <h4>Porgram | <span>운영프로그램</span></h4>
+                        <a href=""><img src="./img/main/main_program_img.jpg" alt=""></a>
+                        <h3><a href="">박물관 체험 프로그램</a> </h3>
+                        <p> 만들기체험 + 아테네시민권발급 + 그리스의상체험 + 전시해설 도슨트 투어등 다채로운 체험프로그램이 준비되어 있습니다.
+                        <p> 체험시간 : AM 10 ,11시 / PM 1 , 2 , 3 , 4시</p>
+                    </li>
+                    <li>
+                        <h4>Guide | <span>박물관 둘러보기</span></h4>
+                        <a href=""><img src="./img/main/main_guide_img.jpg" alt=""></a>
+                        <h3><a href="">총7가지의 다양한 테마관</a> </h3>
+                        <p>창조관,올림포스관,신탁관,영웅관,휴먼광,사랑관,그리스마을 등 총7가지의 다양한 테마로 상상 속 즐거움을 느껴보세요. </p>
+                        <p>운영시간 : AM09 : 00 ~ PM18 : 00 (입장마감 17:00)</p>            
+                    </li>
+                    <li>
+                        <h4>Event</h4>
+                        <a href=""><img src="./img/main/Thumbnail_1.jpg" alt=""></a>
+                        <h3><a href="">50일의 썸머</a> </h3>
+                        <p>그리스신화박물관+트릭아이미술관AR+더핍스시즌 </p>
+                        <p>기간 : 2021-07-13~2021-08-31</p>                
+                    </li>
+               </ul>
+            </article>
+        </section>    
+        <footer>
+          <?php include "./footer.html" ?>     
+        </footer>
 
-        <div class="inner__right">
-          <h2>스타벅스 프로모션</h2>
-          <div class="toggle-promotion open">
-            <div class="material-icons">upload</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!--PROMOTION-->
-    <div class="promotion">
-
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide1.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!" />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide2.jpg" alt="기간 내 스타벅스 카드 e-Gift를 3만원 이상 선물 시, 아메리카노 e-쿠폰을 드립니다." />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide3.jpg" alt="뉴이어 푸드와 제조 음료를 세트로 구매 시, 뉴이어 음료 BOGO(1+1) 쿠폰을 드립니다." />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide4.jpg" alt="신년 MD 상품 포함 3만원 이상 구매 고객께 아메리카노(톨사이즈) 쿠폰을 드립니다." />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide5.jpg" alt="2017 DIGITAL LUCKY DRAW 100% 당첨의 행운을 드립니다!" />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-pagination"></div>
-
-      <div class="swiper-prev">
-        <span class="material-icons">arrow_back</span>
-      </div>
-      <div class="swiper-next">
-        <span class="material-icons">arrow_forward</span>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!--REWARDS-->
-  <section class="rewards">
-    <div class="bg-left"></div>
-    <div class="bg-right"></div>
-    <div class="inner">
-
-      <div class="btn-group">
-        <div class="btn btn--reverse sign-up">회원가입</div>
-        <div class="btn sign-in">로그인</div>
-        <div class="btn gift">e-Gift 선물하기</div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!--YOUTUBE VIDEO-->
-  <section class="youtube">
-    <div class="youtube__area">
-      <div id="player"></div>
-    </div>
-    <div class="youtube__cover"></div>
-    <div class="inner">
-
-      <img src="./images/floating1.png" alt="Icon" class="floating floating1" />
-      <img src="./images/floating2.png" alt="Icon" class="floating floating2" />
 
     </div>
-  </section>
-
-
-  <!--SEASON PRODUCT-->
-  <section class="season-product scroll-spy">
-    <div class="inner">
-
-      <img src="./images/floating3.png" alt="Icon" class="floating floating3" />
-      <img src="./images/season_product_image.png" alt="아이스 커피 블렌드" class="product back-to-position to-right delay-0" />
-
-      <div class="text-group">
-        <img src="./images/season_product_text1.png" alt="상쾌하게 여름을 반겨줄 시즌 원두 아이스 커피 블렌드" class="title back-to-position to-left delay-1" />
-        <img src="./images/season_product_text2.png" alt="아프리카와 라틴 아메리카 커피의 브렌드로 시트러스함과 은은한 캐러멜 향을 동시에 느낄 수 있으며, 차갑게 즐길 때 풍미가 더욱 깊어지는 원두입니다." class="description back-to-position to-left delay-2" />
-        <div class="more back-to-position to-left delay-3">
-          <a href="javascript:void(0)" class="btn">자세히 보기</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!--RESERVE COFFEE-->
-  <section class="reserve-coffee scroll-spy">
-    <div class="inner">
-
-      <img src="./images/reserve_logo.png" alt="" class="reserve-logo back-to-position to-right delay-0" />
-      <div class="text-group">
-        <img src="./images/reserve_text.png" alt="" class="description back-to-position to-right delay-1" />
-        <div class="more back-to-position to-right delay-2">
-          <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
-        </div>
-      </div>
-      <img src="./images/reserve_image.png" alt="" class="product back-to-position to-left delay-3" />
-
-    </div>
-  </section>
-
-
-  <!--PICK YOUR FAVORITE-->
-  <section class="pick-your-favorite scroll-spy">
-    <div class="inner">
-
-      <div class="text-group">
-        <img src="./images/favorite_text1.png" alt="PICK YOUR FAVORITE" class="title back-to-position to-right delay-0" />
-        <img src="./images/favorite_text2.png" alt="다양한 메뉴를 스타벅스에서 즐겨보세요." class="description back-to-position to-right delay-1" />
-        <div class="more back-to-position to-right delay-2">
-          <a href="javascript:void(0)" class="btn btn--white">자세히 보기</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!--RESERVE STORE-->
-  <section class="reserve-store">
-    <div class="inner">
-
-      <div class="medal">
-        <div class="front">
-          <img src="./images/reserve_store_medal_front.png" alt="R">
-        </div>
-        <div class="back">
-          <img src="./images/reserve_store_medal_back.png" alt="스타벅스 리저브 매장">
-          <a href="javascript:void(0)" class="btn">
-            매장안내
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!--FIND THE STORE-->
-  <section class="find-store scroll-spy">
-    <div class="inner">
-
-      <img src="./images/find_store_texture1.png" alt="" class="texture1" />
-      <img src="./images/find_store_texture2.png" alt="" class="texture2" />
-      <img src="./images/find_store_picture1.jpg" alt="" class="picture picture1 back-to-position to-right delay-0" />
-      <img src="./images/find_store_picture2.jpg" alt="" class="picture picture2 back-to-position to-right delay-1" />
-      <div class="text-group">
-        <img src="./images/find_store_text1.png" alt="스타벅스를 가까이에서 경험해보세요." class="title back-to-position to-left delay-0" />
-        <img src="./images/find_store_text2.png" alt="고객님과 가장 가까이 있는 매장을 찾아보세요!" class="description back-to-position to-left delay-1" />
-        <div class="more back-to-position to-left delay-2">
-          <a href="javascript:void(0)" class="btn">매장찾기</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!--AWARDS-->
-  <section class="awards">
-    <div class="inner">
-
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/awards_slide1.jpg" alt="대통령 표창" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/awards_slide2.jpg" alt="대통령 표창 (3년 연속)" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/awards_slide3.jpg" alt="우수사업주 인증" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/awards_slide4.jpg" alt="경연대회 대상" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/awards_slide5.jpg" alt="대한상의회장상" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/awards_slide6.jpg" alt="기업사회공헌 활동 부문" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/awards_slide7.jpg" alt="KSI 1위 (5년 연속)" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/awards_slide8.jpg" alt="KS-SQI 1위 (5년 연속)" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/awards_slide9.jpg" alt="커피전문점 부문 (4년 연속)" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/awards_slide10.jpg" alt="동반성장 부문 (4년 연속)" />
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-prev">
-        <span class="material-icons">arrow_back</span>
-      </div>
-      <div class="swiper-next">
-        <span class="material-icons">arrow_forward</span>
-      </div>
-
-    </div>
-  </section>
-
-  <!--FOOTER-->
-  <footer>
-  <?php include 'footer.html' ?>
-  </footer>
-
-  <!--TO TOP BUTTON-->
-  <div id="to-top">
-    <div class="material-icons">arrow_upward</div>
-  </div>
 </body>
 </html>
